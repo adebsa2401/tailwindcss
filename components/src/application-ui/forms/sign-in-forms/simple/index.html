@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Application UI - Registration forms - Simple</title>
+  <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body>
+<main class="min-h-screen flex items-center justify-center">
+  <div class="border rounded-2xl px-8 py-12">
+    <div class="flex flex-col items-center gap-10">
+      <img src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your company" class="h-10 w-auto">
+      <h1 class="text-2xl font-bold leading-9 tracking-tight text-gray-900">Sign in to your account</h1>
+    </div>
+
+    <form class="my-10 space-y-6">
+      <div class="flex flex-col gap-2">
+        <label for="email-input" class="text-sm font-medium leading-6 text-gray-900">Email address</label>
+        <input id="email-input" type="text" name="email" required autocomplete="email" class="rounded-md py-1.5 shadow-md">
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <div class="flex justify-between">
+          <label for="password-input" class="text-sm font-medium leading-6 text-gray-900">Password</label>
+          <a href="#" class="text-indigo-600 hover:text-indigo-500 text-sm">Forgot password?</a>
+        </div>
+        <input id="password-input" type="password" name="password" required autocomplete="current-password" class="rounded-md py-1.5 shadow-md">
+      </div>
+
+      <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white py-1.5 rounded-lg text-sm font-semibold leading-6 shadow-sm">Sign in</button>
+    </form>
+
+    <p class="text-sm text-gray-500">Not a member? <a href="#" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Start a 14 day free trial</a></p>
+  </div>
+</main>
+</body>
+</html>
